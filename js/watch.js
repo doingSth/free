@@ -24,6 +24,7 @@ function observer(data) {
                 configurable: true,
                 get: function () {
                     dep.addWatch()
+                    console.log(key)
                     return val
                 },
                 set: function (newVal) {
